@@ -1,0 +1,8 @@
+Source Object,Source Field,Target Object,Target Field,Data Type,Transformation Required,Notes
+Legacy_Leads,lead_email,Lead,Email,Email,No,
+Legacy_Leads,lead_phone,Lead,Phone,Phone,Yes - format to E.164,
+Legacy_Leads,lead_source_code,Lead,LeadSource,Picklist,Yes - remap codes to labels,See picklist value mapping sheet
+Legacy_Properties,property_id,Listing__c,External_Id__c,Text,No,Used as upsert key
+Legacy_Properties,property_status,Listing__c,Status__c,Picklist,Yes - remap codes to labels,
+Legacy_Contacts,contact_email,Contact,Email,Email,No,Primary dedup key
+Legacy_Contacts,contact_phone,Contact,Phone,Phone,Yes - format to E.164,Secondary dedup key
